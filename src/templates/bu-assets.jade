@@ -1,0 +1,61 @@
+doctype html
+html(lang='en')
+	head
+		title CWB
+		script(src='/node_modules/angular/angular.min.js')
+		script(src='/node_modules/jquery/dist/jquery.min.js')
+		link(rel='stylesheet' href='/node_modules/bootstrap/dist/css/bootstrap.min.css')
+		link(rel='stylesheet' href='/node_modules/bootstrap/dist/css/bootstrap-theme.min.css')
+		script(src='/node_modules/bootstrap/dist/js/bootstrap.min.js')
+		script(src='/dist/scripts/app.js')
+		link(href='/dist/styles/style.css', rel='stylesheet')
+	body(ng-app='cwbApp')
+		div(class='container-fluid')
+			header(id='top-header')
+				div(class='logo')
+				div() Welcome&nbsp;
+					strong() System Aministrator
+					span(class='glyphicon glyphicon-log-out')
+
+			nav()
+				ul(class='nav nav-tabs')
+					li(role='presentation' class='active')
+						a(href='') BU Management
+					li(role='presentation')
+						a(href='') User Management
+					li(role='presentation')
+						a(href='') i18n
+
+			section(class='content')
+				nav(class="btn-group", role="group", aria-label="...")
+					div(class="btn-group" role="group")
+						buton(type="button" class="btn btn-default") BU List
+						buton(type="button" class="btn btn-default") Knowledge Assets
+						buton(type="button" class="btn btn-default") Modules Integration
+
+				h4() Business Unit Assets
+
+				div(class='content-main')
+					buton(type="button" class="btn btn-default") Upload new file
+
+					p()
+						table(class="table table-striped table-condensed table-bordered")
+							tr(class='active')
+								th(width='15%') File Name
+								th(width='15%') Uploaded Date
+								th(width='70%') Status
+
+							tr()
+								td() Data1.rdf
+								td() 12.05.2015
+								td() Approved
+
+							tr()
+								td() Data2.rdf
+								td() 18.05.2015
+								td() Approved
+
+							tr()
+								td() Data3.rdf
+								td() 20.05.2015
+								td() Pending						

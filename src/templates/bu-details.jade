@@ -1,0 +1,110 @@
+doctype html
+html(lang='en')
+	head
+		title CWB
+		script(src='/node_modules/angular/angular.min.js')
+		script(src='/node_modules/jquery/dist/jquery.min.js')
+		link(rel='stylesheet' href='/node_modules/bootstrap/dist/css/bootstrap.min.css')
+		link(rel='stylesheet' href='/node_modules/bootstrap/dist/css/bootstrap-theme.min.css')
+		script(src='/node_modules/bootstrap/dist/js/bootstrap.min.js')
+		script(src='/dist/scripts/app.js')
+		link(href='/dist/styles/style.css', rel='stylesheet')
+	body(ng-app='cwbApp')
+		div(class='container-fluid')
+			header(id='top-header')
+				div(class='logo')
+				div() Welcome&nbsp;
+					strong() System Aministrator
+					span(class='glyphicon glyphicon-log-out')
+
+			nav()
+				ul(class='nav nav-tabs')
+					li(role='presentation' class='active')
+						a(href='') BU Management
+					li(role='presentation')
+						a(href='') User Management
+					li(role='presentation')
+						a(href='') i18n
+
+			section(class='content')
+				nav(class="btn-group", role="group", aria-label="...")
+					div(class="btn-group" role="group")
+						buton(type="button" class="btn btn-default") BU List
+						buton(type="button" class="btn btn-default") Knowledge Assets
+						buton(type="button" class="btn btn-default") Modules Integration
+
+				h4() Business Unit Details
+
+				div(class='content-main')
+					form(id='bu-details-form')
+						div(class='bu-details-form-container')
+							div(class='bu-details-form-column0')
+								div(class='bu-details-form-element')
+									div(class='bu-details-form-column1')
+										label() Domain
+									div(class='bu-details-form-column2')
+										input(type="url",id="inputDomain",class="form-control", placeholder="",required="", autofocus)
+								div(class='bu-details-form-element')
+									div(class='bu-details-form-column1')
+										label() Description
+									div(class='bu-details-form-column2')
+										textarea(class="form-control", placeholder="",required="")
+								div(class='bu-details-form-element')
+									div(class='bu-details-form-column1')
+										label() Address
+									div(class='bu-details-form-column2')
+										textarea(class="form-control", placeholder="",required="")
+								div(class='bu-details-form-element')
+									div(class='bu-details-form-column1')
+										label() Upload logo
+									div(class='bu-details-form-column2')
+										div(id='upload-logo')
+							div(class='bu-details-form-column0')
+								div(class='bu-details-form-element')
+									div(class='bu-details-form-column1')
+										label() Email
+									div(class='bu-details-form-column2')
+										input(class="form-control", type="url",id="inputDomain",placeholder="",required="")
+								div(class='bu-details-form-element')
+									div(class='bu-details-form-column1')
+										label() Phone
+									div(class='bu-details-form-column2')
+										input(class="form-control", type="url",id="inputDomain",placeholder="",required="")
+								div(class='bu-details-form-element')
+									div(class='bu-details-form-column1')
+										label() Date Format
+									div(class='bu-details-form-column2')
+										select(class="form-control")
+											option() dd.MM.yyyy
+											option() dd.MM.yy
+											option() d.M.y
+											option() dd/MM/yy
+											option() yyyy-MM-dd
+								div(class='bu-details-form-element')
+									div(class='bu-details-form-column1')
+										label() Time Zone
+									div(class='bu-details-form-column2')
+										select(class="form-control", multiple)
+											option() (UTC)
+											option() (UTC + 01.00)
+											option() (UTC + 02.00)
+											option() (UTC + 03.00)
+											option() (UTC + 04.00)
+											option() (UTC + 05.00)
+											option() (UTC + 06.00)
+							div(class='bu-details-form-column0')
+								div(class='bu-details-form-element')
+									div(class='bu-details-form-column1')
+										label() Time Format
+									div(class='bu-details-form-column2')
+										select(class="form-control", multiple)
+											option() H:mm
+											option() HH:mm
+											option() H:mm:ss
+											option() HH:mm:ss
+
+						div(class='save-cancel-buttons')
+							div(class="btn-group", role="group", aria-label="...")
+								div(class="btn-group" role="group")
+									buton(type="button" class="btn btn-default") Save
+									buton(type="button" class="btn btn-default") Cancel

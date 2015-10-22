@@ -1,0 +1,36 @@
+{
+  "name": "cwb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "leskeg",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "*",
+    "angular-route": "*",
+    "bootstrap": "^3.3.5",
+    "express": "*",
+    "fs": "*",
+    "http": "*",
+    "jquery": "^2.1.4",
+    "path": "*"
+  },
+  "devDependencies": {
+    "del": "*",
+    "gulp": "*",
+    "gulp-autoprefixer": "*",
+    "gulp-coffee": "*",
+    "gulp-concat": "*",
+    "gulp-cssmin": "*",
+    "gulp-imagemin": "*",
+    "gulp-jade": "*",
+    "gulp-minify-html": "*",
+    "gulp-sass": "*",
+    "gulp-svgmin": "*",
+    "gulp-uglify": "*",
+    "gulp-util": "*"
+  }
+}

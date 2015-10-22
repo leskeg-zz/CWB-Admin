@@ -1,0 +1,25 @@
+doctype html
+html(lang='en')
+	head
+		title CWB
+		script(src='/node_modules/angular/angular.min.js')
+		script(src='/node_modules/jquery/dist/jquery.min.js')
+		link(rel='stylesheet' href='/node_modules/bootstrap/dist/css/bootstrap.min.css')
+		link(rel='stylesheet' href='/node_modules/bootstrap/dist/css/bootstrap-theme.min.css')
+		script(src='/node_modules/bootstrap/dist/js/bootstrap.min.js')
+		script(src='/dist/scripts/app.js')
+		link(href='/dist/styles/style.css', rel='stylesheet')
+	body(ng-app='cwbApp')
+		div(id='login-form')
+			form(class="form-signin login-form-item")
+				div(class='logo')
+				label(for="inputEmail",class="sr-only") Email address
+				input(type="email",id="inputEmail",class="form-control",placeholder="Email address",required="",autofocus="")
+				label(for="inputPassword",class="sr-only") Password
+				input(type="password",id="inputPassword",class="form-control",placeholder="Password",required="")
+				div(class='checkbox')
+					label()
+						input(type="checkbox",value="remember-me")
+						span() Remember me
+				button(class="btn btn-lg btn-primary btn-block",type="submit") Sign in
+				
