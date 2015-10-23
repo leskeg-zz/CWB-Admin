@@ -11,11 +11,11 @@
   "dependencies": {
     "angular": "*",
     "angular-route": "*",
-    "bootstrap": "^3.3.5",
+    "bootstrap": "*",
     "express": "*",
     "fs": "*",
     "http": "*",
-    "jquery": "^2.1.4",
+    "jquery": "*",
     "path": "*"
   },
   "devDependencies": {
