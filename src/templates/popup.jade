@@ -1,13 +1,5 @@
 doctype html
 html(lang='en')
-	head
-		title CWB
-		script(src='/node_modules/angular/angular.min.js')
-		script(src='/node_modules/jquery/dist/jquery.min.js')
-		link(rel='stylesheet' href='/node_modules/bootstrap/dist/css/bootstrap.min.css')
-		link(rel='stylesheet' href='/node_modules/bootstrap/dist/css/bootstrap-theme.min.css')
-		script(src='/node_modules/bootstrap/dist/js/bootstrap.min.js')
-		script(src='/dist/scripts/app.js')
-		link(href='/dist/styles/style.css', rel='stylesheet')
+	include ./includes/head.jade
 	body(ng-app='cwbApp')
 		div(class='container-fluid')
