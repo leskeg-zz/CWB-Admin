@@ -68,38 +68,42 @@ html, body
 #upload-logo
     width: 200px
     height: 200px
-    border:1px solid #000
+    border:1px solid #ddd
 
-.bu-details-form-container
+.form-container
 	display: flex
 	flex-wrap: wrap
 	justify-content: flex-start
 
-.bu-details-form-element
+.form-element
 	display: flex
 	flex-wrap: wrap
 	justify-content: flex-start
 
-.bu-details-form-column0
+.form-column0
 	width: 25%
 	min-width: 350px
 
-.bu-details-form-column1
-	width: 100px
+.form-column1
+	width: 25%
 	text-align: right
 	margin: 5px 5px 0 0
 
-.bu-details-form-column2
+.form-column2
 	width: 60%
 
-.bu-details-form-column2 input,
-.bu-details-form-column2 textarea,
-.bu-details-form-column2 select,
-.bu-details-form-column2 #upload-logo
+.form-column2 input,
+.form-column2 textarea,
+.form-column2 select,
+.form-column2 div,
+.form-column2 #upload-logo
 	min-width: 250px
 	margin-bottom: 20px
 
-.bu-details-form-column2 textarea
+.form-column2 div
+	margin: 5px 5px 0 0
+
+.form-column2 textarea
 	resize: vertical
 	min-height: 100px
 	max-height: 300px
@@ -134,3 +138,63 @@ html, body
 .form-control.search
 	margin-top: 1px
 	width: 200px
+
+.popup-content
+	// margin: 1%
+	height: 100%
+	min-width: 400px
+	border: 1px solid black
+
+.popup-content-main
+	margin: 2%
+
+.popup-form-column0
+	width: 80%
+	min-width: 350px
+
+.popup-form-column1
+	width: 100px
+	text-align: left
+	margin: 5px 5px 0 0
+
+.popup-form-column2
+	width: 60%
+
+.popup-form-column2 input,
+.popup-form-column2 textarea,
+.popup-form-column2 select,
+.popup-form-column2 div,
+	min-width: 250px
+	margin-bottom: 20px
+
+.popup-form-column2 div
+	margin: 5px 5px 0 0
+
+.popup-form-column2 textarea
+	resize: vertical
+	min-height: 100px
+	max-height: 300px
+
+.popup-form-column2 select
+	width: 100px
+	height: 60px
+
+.popup-top-header
+	background-color: #ddd
+	height: 40px
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	border-bottom: 1px solid black
+
+.popup-top-header div
+	display: flex
+	align-items: center
+	justify-content: center
+
+.popup-top-header .popup-title
+	margin-left: 10px
+
+.popup-top-header .close-popup
+	margin-right: 10px
+	cursor: pointer
