@@ -11,8 +11,7 @@ html, body
 	justify-content: space-between
 
 .logo
-	background-image: url($IMAGES_FOLDER + 'wolters-kluwer-logo-large-dark.png')
-	background-repeat: no-repeat
+	background: url($IMAGES_FOLDER + 'wolters-kluwer-logo-large-dark.png') no-repeat
 	height: 96px
 	width: 334px
 
@@ -35,7 +34,7 @@ html, body
 	border-right: 1px solid #ddd
 
 .content-main
-	margin: 1% 0% 0 2%
+	margin: 1% 0 0 2%
 	max-width: 1500px
 
 #login-form
@@ -68,7 +67,7 @@ html, body
 #upload-logo
     width: 200px
     height: 200px
-    border:1px solid #ddd
+    border: 1px solid #ddd
 
 .form-container
 	display: flex
@@ -111,8 +110,8 @@ html, body
 .save-cancel-buttons
 	display: flex
 	justify-content: center
-	margin-right:20%
-	margin-top:10px
+	margin-right: 20%
+	margin-top: 10px
 
 .bu-modules-buttons
 	display: flex
@@ -130,7 +129,7 @@ html, body
 .roles-group-element
 	margin-left: 10px
 	display: flex
-	align-items: top
+	align-items: top //invalid property value
 	max-height: 300px
 	min-width: 320px
 	overflow: auto
@@ -163,7 +162,7 @@ html, body
 .popup-form-column2 input,
 .popup-form-column2 textarea,
 .popup-form-column2 select,
-.popup-form-column2 div,
+.popup-form-column2 div
 	min-width: 250px
 	margin-bottom: 20px
 
