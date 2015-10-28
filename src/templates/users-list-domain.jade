@@ -5,7 +5,7 @@ html(lang='en')
     div(class='container-fluid')
       main-header(role="System Administrator")
 
-      nav()
+      nav
         ul(class='nav nav-tabs')
           li(role='presentation')
             a(href='') BU Management
@@ -17,16 +17,16 @@ html(lang='en')
       section(class='content')
 
         div(class='inline')
-          h4() Users List of&nbsp;
+          h4 Users List of&nbsp;
 
           div(class='users-list-domain')
             select(class="form-control", multiple)
-              option() ARM
-              option() BU1
-              option() BU2
-              option() BU3
-              option() BU4
-              option() BU5
+              option ARM
+              option BU1
+              option BU2
+              option BU3
+              option BU4
+              option BU5
 
         div(class='content-main')
           nav(class="btn-group", role="group", aria-label="...")
@@ -34,11 +34,11 @@ html(lang='en')
               button(type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") Actions
                 span(class='caret')
               ul(class='dropdown-menu')
-                li()
+                li
                   a(href='') Add
-                li()
+                li
                   a(href='') Edit
-                li()
+                li
                   a(href='') Remove
             div(class="btn-group" role="group")
               buton(type="button" class="btn btn-default") Block
@@ -47,24 +47,24 @@ html(lang='en')
               buton(type="button" class="btn btn-default") Manage Roles
               buton(type="button" class="btn btn-default") Manage Groups
 
-          p()
+          p
             table(class="table table-striped table-condensed table-bordered")
               tr(class='active')
                 th(width='15%') Name
                 th(width='15%') Role
                 th(width='70%') Status
 
-              tr()
-                td() User 1
-                td() Admin
-                td() Enabled
+              tr
+                td User 1
+                td Admin
+                td Enabled
 
-              tr()
-                td() User 2
-                td() Editor
-                td() Blocked
+              tr
+                td User 2
+                td Editor
+                td Blocked
 
-              tr()
-                td() User 3
-                td() manager
-                td() Enabled
+              tr
+                td User 3
+                td manager
+                td Enabled
