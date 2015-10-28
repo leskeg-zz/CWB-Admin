@@ -1,56 +1,56 @@
 doctype html
 html(lang='en')
-	include ./includes/head.jade
-	body(ng-app='cwbApp')
-		div(class='container-fluid')
-			section(class='popup-content')
-				header(class='popup-top-header')
-					div(class='popup-title') 
-						strong User Add/Edit
-					div(class='close-popup')
-						strong x
+  include ./includes/head.jade
+  body(ng-app='cwbApp')
+    div(class='container-fluid')
+      section(class='popup-content')
+        header(class='popup-top-header')
+          div(class='popup-title') 
+            strong User Add/Edit
+          div(class='close-popup')
+            strong x
 
-				section(class='popup-content-main')
-					form()
-						div(class='popup-form-container')
-							div(class='popup-form-column0')
-								div(class='form-element')
-									div(class='popup-form-column1')
-										label() Domain
-									div(class='popup-form-column2')
-										div() ARM
-							div(class='popup-form-column0')
-								div(class='form-element')
-									div(class='popup-form-column1')
-										label() Full Name
-									div(class='popup-form-column2')
-										input(type="text",id="",class="form-control", placeholder="",required="", autofocus)
-							div(class='popup-form-column0')
-								div(class='form-element')
-									div(class='popup-form-column1')
-										label() Email
-									div(class='popup-form-column2')
-										input(type="email",id="",class="form-control", placeholder="",required="", autofocus)
-							div(class='popup-form-column0')
-								div(class='form-element')
-									div(class='popup-form-column1')
-										label() Role
-									div(class='popup-form-column2')
-										select(class="form-control", multiple)
-											option() Editor
-											option() Coordinator
-											option() Administrator
-							div(class='popup-form-column0')
-								div(class='form-element')
-									div(class='popup-form-column1')
-										label() Group
-									div(class='popup-form-column2')
-										select(class="form-control", multiple)
-											option() Editor
-											option() Coordinator
-											option() Administrator
-						div(class='save-cancel-buttons')
-								div(class="btn-group", role="group", aria-label="...")
-									div(class="btn-group" role="group")
-										buton(type="button" class="btn btn-default") Save
-										buton(type="button" class="btn btn-default") Cancel
+        section(class='popup-content-main')
+          form()
+            div(class='popup-form-container')
+              div(class='popup-form-column0')
+                div(class='form-element')
+                  div(class='popup-form-column1')
+                    label() Domain
+                  div(class='popup-form-column2')
+                    div() ARM
+              div(class='popup-form-column0')
+                div(class='form-element')
+                  div(class='popup-form-column1')
+                    label() Full Name
+                  div(class='popup-form-column2')
+                    input(type="text",id="",class="form-control", placeholder="",required="", autofocus)
+              div(class='popup-form-column0')
+                div(class='form-element')
+                  div(class='popup-form-column1')
+                    label() Email
+                  div(class='popup-form-column2')
+                    input(type="email",id="",class="form-control", placeholder="",required="", autofocus)
+              div(class='popup-form-column0')
+                div(class='form-element')
+                  div(class='popup-form-column1')
+                    label() Role
+                  div(class='popup-form-column2')
+                    select(class="form-control", multiple)
+                      option() Editor
+                      option() Coordinator
+                      option() Administrator
+              div(class='popup-form-column0')
+                div(class='form-element')
+                  div(class='popup-form-column1')
+                    label() Group
+                  div(class='popup-form-column2')
+                    select(class="form-control", multiple)
+                      option() Editor
+                      option() Coordinator
+                      option() Administrator
+            div(class='save-cancel-buttons')
+                div(class="btn-group", role="group", aria-label="...")
+                  div(class="btn-group" role="group")
+                    buton(type="button" class="btn btn-default") Save
+                    buton(type="button" class="btn btn-default") Cancel
