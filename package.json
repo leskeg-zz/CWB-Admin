@@ -2,7 +2,7 @@
   "name": "cwb",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -26,6 +26,7 @@
     "gulp-concat": "*",
     "gulp-cssmin": "*",
     "gulp-imagemin": "*",
+    "gulp-insert": "^0.5.0",
     "gulp-jade": "*",
     "gulp-minify-html": "*",
     "gulp-sass": "*",

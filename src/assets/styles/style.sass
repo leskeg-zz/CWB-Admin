@@ -1,4 +1,4 @@
-$IMAGES_FOLDER: '/dist/images/'
+$IMAGES_FOLDER: '/dist/assets/images/'
 
 html, body
   height: 100%
@@ -10,11 +10,6 @@ html, body
   flex-wrap: wrap
   justify-content: space-between
 
-.logo
-  background: url($IMAGES_FOLDER + 'wolters-kluwer-logo-large-dark.png') no-repeat
-  height: 96px
-  width: 334px
-
 #top-header div
   display: flex
   align-items: center
@@ -24,6 +19,11 @@ html, body
 #top-header div .glyphicon-log-out
   margin-left: 10px
   cursor: pointer
+
+.logo
+  background: url($IMAGES_FOLDER + 'wolters-kluwer-logo-large-dark.png') no-repeat
+  height: 96px
+  width: 334px
 
 .content
   padding: 1%

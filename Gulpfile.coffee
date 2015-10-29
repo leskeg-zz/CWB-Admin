@@ -12,40 +12,50 @@ concat = require 'gulp-concat'
 uglify = require 'gulp-uglify'
 del = require 'del'
 gutil = require 'gulp-util'
+insert = require 'gulp-insert'
 
 paths =
   src:
-    scripts: 'src/scripts/**/*.coffee'
-    templates: 'src/templates/**/*.jade'
-    styles: 'src/styles/**/*.sass'
-    fonts: 'src/fonts/**/*'
-    images: 'src/images/**/*'
+    scripts: 'src/app/**/*.coffee'
+    templates: 'src/**/*.jade'
+    styles: 'src/assets/styles/**/*.sass'
+    fonts: 'src/assets/fonts/**/*'
+    images: 'src/assets/images/**/*'
   dest:
-    scripts: 'dist/scripts'
-    templates: 'dist/templates'
-    styles: 'dist/styles'
-    fonts: 'dist/fonts'
-    images: 'dist/images'
+    scripts: 'dist/app'
+    templates: 'dist/'
+    styles: 'dist/assets/styles'
+    fonts: 'dist/assets/fonts'
+    images: 'dist/assets/images'
 
 gulp.task 'scripts', ->
-  gulp.src [paths.src.scripts, '!src/scripts/index.coffee' ]
+  gulp.src [
+    'src/app/app.module.coffee', 
+    'src/app/app.constant.coffee', 
+    'src/app/app.config.coffee',
+    'src/app/app.route.coffee',
+    paths.src.scripts
+  ]
+  # gulp.src paths.src.scripts
     .pipe coffee({bare:true}).on('error', onError)
-      # .pipe uglify()
-      # .pipe concat('all.min.js')
+    .pipe insert.wrap('(function(){','})();')
+    .pipe concat('app.min.js')
+    .pipe uglify()
     .pipe gulp.dest paths.dest.scripts
-  gulp.src 'src/scripts/index.coffee'
+  gulp.src './server.coffee'
     .pipe coffee({bare:true}).on('error', onError)
     .pipe gulp.dest '.'
 
 # Create you HTML from Jade
 gulp.task 'templates', ->
-  gulp.src [ paths.src.templates, '!src/templates/index.jade' ]
+  # gulp.src [ paths.src.templates, '!src/index.jade' ]
+  gulp.src paths.src.templates
     .pipe jade({pretty: true}).on('error', onError)
-    # .pipe minifyHTML()
+    .pipe minifyHTML()
     .pipe gulp.dest paths.dest.templates
-  gulp.src 'src/templates/index.jade'
-    .pipe jade({pretty: true}).on('error', onError)
-    .pipe gulp.dest '.'
+  # gulp.src 'src/index.jade'
+  #   .pipe jade({pretty: true}).on('error', onError)
+  #   .pipe gulp.dest '.'
 
 # Create your CSS from Sass
 gulp.task 'styles', ->
