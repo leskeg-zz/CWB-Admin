@@ -1,8 +1,8 @@
-CwbNavController = () ->
+NavController = ($route) ->
   vm = @
-  vm.tabs = ['BU Management','User Management','i18n']
+  
   return
 
 angular
-  .module 'cwbApp'
-  .controller 'CwbNavController', CwbNavController
+  .module('cwbApp')
+  .controller('NavController', NavController)

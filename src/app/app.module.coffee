@@ -1,2 +1,1 @@
-'use strict'
-angular.module 'cwbApp', []
+angular.module('cwbApp', ['ngRoute'])

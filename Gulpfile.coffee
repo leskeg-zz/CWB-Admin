@@ -37,10 +37,12 @@ gulp.task 'scripts', ->
     paths.src.scripts
   ]
   # gulp.src paths.src.scripts
-    .pipe coffee({bare:true}).on('error', onError)
-    .pipe insert.wrap('(function(){','})();')
+    .pipe insert.prepend("'use strict';")
+    .pipe coffee().on('error', onError)
+    # .pipe coffee({bare:true}).on('error', onError)
+    # .pipe insert.wrap("(function(){\r\n'use strict';\r\n", "})();")
     .pipe concat('app.min.js')
-    .pipe uglify()
+    # .pipe uglify()
     .pipe gulp.dest paths.dest.scripts
   gulp.src './server.coffee'
     .pipe coffee({bare:true}).on('error', onError)
@@ -51,7 +53,7 @@ gulp.task 'templates', ->
   # gulp.src [ paths.src.templates, '!src/index.jade' ]
   gulp.src paths.src.templates
     .pipe jade({pretty: true}).on('error', onError)
-    .pipe minifyHTML()
+    # .pipe minifyHTML()
     .pipe gulp.dest paths.dest.templates
   # gulp.src 'src/index.jade'
   #   .pipe jade({pretty: true}).on('error', onError)

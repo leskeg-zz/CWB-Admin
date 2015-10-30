@@ -9,5 +9,5 @@ cwbHeader = () ->
   return directive
 
 angular
-  .module 'cwbApp'
-  .directive 'cwbHeader', cwbHeader
+  .module('cwbApp')
+  .directive('cwbHeader', cwbHeader)
