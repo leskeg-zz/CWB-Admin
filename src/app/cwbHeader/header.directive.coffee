@@ -1,7 +1,7 @@
 cwbHeader = () ->
   directive = 
     restrict: 'E',
-    templateUrl: '/dist/app/cwbHeader/cwbHeader.directive.html',
+    templateUrl: '/dist/app/cwbHeader/header.directive.html',
     scope: {
       role: '@'
     }
