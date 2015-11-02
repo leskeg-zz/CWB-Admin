@@ -1,9 +1,11 @@
 head
   title CWB
   script(src='/node_modules/angular/angular.min.js')
+  script(src='/bower_components/angular-route/angular-route.min.js')
   script(src='/node_modules/jquery/dist/jquery.min.js')
+  script(src='/node_modules/bootstrap/dist/js/bootstrap.min.js')
+  script(src='/dist/app/app.min.js')
   link(rel='stylesheet' href='/node_modules/bootstrap/dist/css/bootstrap.min.css')
   link(rel='stylesheet' href='/node_modules/bootstrap/dist/css/bootstrap-theme.min.css')
-  script(src='/node_modules/bootstrap/dist/js/bootstrap.min.js')
-  script(src='/app/app.min.js')
-  link(href='/assets/styles/style.css', rel='stylesheet')
+  link(rel='stylesheet' href='/dist/assets/styles/style.css')
+  base(href='/')

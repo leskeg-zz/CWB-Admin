@@ -1,12 +1,12 @@
 config = ($routeProvider, $locationProvider)->
-  bu_management = 
+  bu_management =
     templateUrl: '/dist/assets/templates/bu_management.html'
     activetab: 'BU Management'
 
   user_management =
     template: 'test2'
 
-  i18n = 
+  i18n =
     template: 'test3'
 
   $routeProvider

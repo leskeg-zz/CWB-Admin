@@ -1,13 +1,13 @@
 cwbNavTab = () ->
-  
+
   link = (scope, element, attrs)->
     scope.toLink = (s) ->
       return s.toLowerCase().replace(' ', '_')
 
-  scope = 
+  scope =
     tabs: '='
 
-  directive = 
+  directive =
     link: link
     scope: scope
     restrict: 'E',

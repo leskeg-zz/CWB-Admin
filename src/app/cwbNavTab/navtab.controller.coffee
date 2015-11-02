@@ -1,6 +1,6 @@
 NavController = ($route) ->
   vm = @
-  
+
   return
 
 angular
