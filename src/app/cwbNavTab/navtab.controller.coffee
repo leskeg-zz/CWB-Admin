@@ -1,4 +1,4 @@
-NavController = ($route) ->
+NavController = () ->
   vm = @
   
   return
