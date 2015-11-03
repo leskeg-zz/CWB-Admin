@@ -26,7 +26,6 @@
     "gulp-cssmin": "*",
     "gulp-imagemin": "*",
     "gulp-insert": "*",
-    "gulp-jade": "*",
     "gulp-minify-html": "*",
     "gulp-sass": "*",
     "gulp-svgmin": "*",
