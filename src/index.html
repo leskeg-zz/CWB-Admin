@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CWB</title>
+    <script src="/node_modules/angular/angular.min.js"></script>
+    <script src="/node_modules/angular-route/angular-route.min.js"></script>
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/dist/app/app.min.js"></script>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="/dist/assets/styles/style.css">
+    <base href="/">
+  </head>
+  <body ng-app="cwbApp">
+    <div class="container-fluid">
+      <cwb-header role="System Administrator"></cwb-header>
+      <cwb-nav-tab tabs="['BU Management', 'User Management', 'i18n']"></cwb-nav-tab>
+      <section class="content">
+        <div ng-view></div>
+      </section>
+    </div>
+  </body>
+</html>

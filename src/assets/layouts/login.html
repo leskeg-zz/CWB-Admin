@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CWB</title>
+    <script src="/node_modules/angular/angular.min.js"></script>
+    <script src="/node_modules/angular-route/angular-route.min.js"></script>
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/dist/app/app.min.js"></script>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="/dist/assets/styles/style.css">
+    <base href="/">
+  </head>
+  <body ng-app="cwbApp">
+    <div id="login-form">
+      <form class="form-signin login-form-item">
+        <div class="logo"></div>
+        <label for="inputEmail" class="sr-only">Username</label>
+        <input type="text" id="inputEmail" placeholder="Username" required="" autofocus="" class="form-control">
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" id="inputPassword" placeholder="Password" required="" class="form-control">
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="remember-me"><span>Remember me</span>
+          </label>
+        </div>
+        <button type="submit" class="btn btn-lg btn-primary btn-block">Sign in</button>
+      </form>
+    </div>
+  </body>
+</html>
