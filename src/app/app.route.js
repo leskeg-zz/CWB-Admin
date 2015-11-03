@@ -1,4 +1,4 @@
-angular.module('cwbApp').config(function($stateProvider, $urlRouterProvider, $locationProvider) {
+angular.module('cwbApp').config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
 
     $urlRouterProvider
         .when('/', 'bu_management')
@@ -13,11 +13,11 @@ angular.module('cwbApp').config(function($stateProvider, $urlRouterProvider, $lo
         })
         .state('user_management', {
             url: '/user_management',
-            template: 'test2'
+            templateUrl: '/dist/assets/templates/user_management.html'
         })
         .state('i18n', {
             url: '/i18n',
-            template: 'test3'
+            templateUrl: '/dist/assets/templates/i18n.html'
         });
 
     $locationProvider.html5Mode(true);
