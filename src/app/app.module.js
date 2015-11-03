@@ -1,1 +1,1 @@
-angular.module('cwbApp', ['ui.router'])
+angular.module('cwbApp', ['ui.router']);

@@ -10,7 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "angular": "*",
-    "angular-route": "*",
+    "angular-ui-router": "^0.2.15",
     "bootstrap": "*",
     "express": "*",
     "fs": "*",

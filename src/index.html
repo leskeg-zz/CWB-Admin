@@ -3,13 +3,13 @@
   <head>
     <title>CWB</title>
     <script src="/node_modules/angular/angular.min.js"></script>
-    <script src="/node_modules/angular-route/angular-route.min.js"></script>
+    <script src="/node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
     <script src="/node_modules/jquery/dist/jquery.min.js"></script>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="/dist/app/app.min.js"></script>
-    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="/dist/assets/styles/style.css">
+    <link  href="/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link  href="/node_modules/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link  href="/dist/assets/styles/style.css" rel="stylesheet">
     <base href="/">
   </head>
   <body ng-app="cwbApp">
@@ -17,7 +17,7 @@
       <cwb-header role="System Administrator"></cwb-header>
       <cwb-nav-tab tabs="['BU Management', 'User Management', 'i18n']"></cwb-nav-tab>
       <section class="content">
-        <div ng-view></div>
+        <div ui-view></div>
       </section>
     </div>
   </body>

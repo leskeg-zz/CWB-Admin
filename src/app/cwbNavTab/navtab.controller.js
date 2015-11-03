@@ -1,3 +1,3 @@
-angular.module('cwbApp').controller('NavController', function($route) {
+angular.module('cwbApp').controller('NavController', function() {
     var vm = this;
 });
