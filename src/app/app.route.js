@@ -20,7 +20,7 @@ angular.module('cwbApp').config(function ($stateProvider, $urlRouterProvider, $l
         .state('user_management.roles',         {url: '/roles',             templateUrl: '/dist/assets/templates/user_roles.html'})
         .state('user_management.role-groups',   {url: '/role_groups',       templateUrl: '/dist/assets/templates/user_role_groups.html'})
 
-        .state('i18n', {url: '/i18n', templateUrl: '/cwb/dist/assets/templates/i18n.html'});
+        .state('i18n', {url: '/i18n', templateUrl: '/dist/assets/templates/i18n.html'});
 
     $locationProvider.html5Mode(true);
 });
