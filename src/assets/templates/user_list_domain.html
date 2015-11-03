@@ -1,0 +1,55 @@
+<div class="inline">
+    <h4>Users List of&nbsp;</h4>
+    <div class="users-list-domain">
+        <select multiple class="form-control">
+            <option>ARM</option>
+            <option>BU1</option>
+            <option>BU2</option>
+            <option>BU3</option>
+            <option>BU4</option>
+            <option>BU5</option>
+        </select>
+    </div>
+</div>
+<div class="content-main">
+    <nav role="group" aria-label="..." class="btn-group">
+        <div role="group" class="btn-group">
+            <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                    class="btn btn-default dropdown-toggle">Actions<span class="caret"></span></button>
+            <ul class="dropdown-menu">
+                <li><a href="">Add</a></li>
+                <li><a href="">Edit</a></li>
+                <li><a href="">Remove</a></li>
+            </ul>
+        </div>
+        <div role="group" class="btn-group">
+            <buton type="button" class="btn btn-default">Block</buton>
+            <buton type="button" class="btn btn-default">Enable</buton>
+            <buton type="button" class="btn btn-default" ui-sref="user_management.roles">Assign Role</buton>
+            <buton type="button" class="btn btn-default" ui-sref="user_management.roles">Manage Roles</buton>
+            <buton type="button" class="btn btn-default" ui-sref="user_management.role-groups">Manage Groups</buton>
+        </div>
+    </nav>
+    <table class="table table-striped table-condensed table-bordered">
+        <tr class="active">
+            <th width="15%">Name</th>
+            <th width="15%">Role</th>
+            <th width="70%">Status</th>
+        </tr>
+        <tr>
+            <td>User 1</td>
+            <td>Admin</td>
+            <td>Enabled</td>
+        </tr>
+        <tr>
+            <td>User 2</td>
+            <td>Editor</td>
+            <td>Blocked</td>
+        </tr>
+        <tr>
+            <td>User 3</td>
+            <td>manager</td>
+            <td>Enabled</td>
+        </tr>
+    </table>
+</div>
