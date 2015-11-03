@@ -1,5 +1,5 @@
 (function () {
-    var concat, cssmin, del, gulp, wrap, gutil, imagemin, insert, jade, minifyHTML, onError, paths, prefix, sass, svgmin, uglify;
+    var concat, cssmin, del, gulp, wrap, gutil, imagemin, insert, minifyHTML, onError, paths, prefix, sass, svgmin, uglify;
 
     gulp = require('gulp');
 
@@ -10,8 +10,6 @@
     prefix = require('gulp-autoprefixer');
 
     cssmin = require('gulp-cssmin');
-
-    jade = require('gulp-jade');
 
     minifyHTML = require('gulp-minify-html');
 
@@ -32,7 +30,7 @@
     paths = {
         src: {
             scripts: 'src/app/**/*.js',
-            templates: 'src/**/*.jade',
+            templates: 'src/**/*.html',
             styles: 'src/assets/styles/**/*.sass',
             fonts: 'src/assets/fonts/**/*',
             images: 'src/assets/images/**/*'
@@ -61,9 +59,9 @@
     });
 
     gulp.task('templates', function () {
-        return gulp.src(paths.src.templates).pipe(jade({
-            pretty: true
-        }).on('error', onError)).pipe(gulp.dest(paths.dest.templates));
+        return gulp.src(paths.src.templates)
+            .pipe(gulp.dest(paths.dest.templates))
+            .on('error', onError);
     });
 
     gulp.task('styles', function () {
