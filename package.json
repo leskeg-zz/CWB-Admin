@@ -10,6 +10,8 @@
   "license": "ISC",
   "dependencies": {
     "angular": "*",
+    "angular-animate": "^1.4.7",
+    "angular-bootstrap": "^0.12.2",
     "angular-ui-router": "^0.2.15",
     "bootstrap": "*",
     "express": "*",
@@ -26,7 +28,6 @@
     "gulp-cssmin": "*",
     "gulp-imagemin": "*",
     "gulp-insert": "*",
-    "gulp-jade": "*",
     "gulp-minify-html": "*",
     "gulp-sass": "*",
     "gulp-svgmin": "*",

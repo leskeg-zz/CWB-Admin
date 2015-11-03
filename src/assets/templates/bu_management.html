@@ -1,2 +1,19 @@
-
-<div>test</div>
+<nav role="group" aria-label="..." class="btn-group">
+    <div role="group" class="btn-group">
+        <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                class="btn btn-default dropdown-toggle">Actions <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+            <li><a ui-sref="bu_management.details">Add</a></li>
+            <li><a ui-sref="bu_management.details">Edit</a></li>
+            <li><a href="">Disable</a></li>
+        </ul>
+    </div>
+    <div role="group" class="btn-group">
+        <buton type="button" class="btn btn-default" ui-sref="bu_management.list">BU List</buton>
+        <buton type="button" class="btn btn-default" ui-sref="bu_management.assets">Knowledge Assets</buton>
+        <buton type="button" class="btn btn-default" ui-sref="bu_management.modules">Modules Integration</buton>
+    </div>
+</nav>
+<div class="content-main">
+    <div ui-view></div>
+</div>
