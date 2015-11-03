@@ -1,7 +1,7 @@
-angular.module('cwbApp').directive('cwbNavTab', function() {
+angular.module('cwbApp').directive('cwbNavTab', function () {
     return {
-        link: function(scope, element, attrs) {
-            return scope.toLink = function(s) {
+        link: function (scope, element, attrs) {
+            return scope.toLink = function (s) {
                 return s.toLowerCase().replace(' ', '_');
             };
         },
