@@ -9,13 +9,15 @@ angular.module('cwbApp').controller('UserController', function ($modal) {
 
     vm.openUserPopup = function () {
         $modal.open({
-            templateUrl: '/dist/assets/templates/edit_user_popup.html'
+            templateUrl: '/dist/assets/templates/edit_user_popup.html',
+            controller: 'PopupActionController as vm'
         });
     };
 
     vm.openActionsPopup = function () {
         $modal.open({
-            templateUrl: '/dist/assets/templates/manage_actions_popup.html'
+            templateUrl: '/dist/assets/templates/manage_actions_popup.html',
+            controller: 'PopupActionController as vm'
         });
     };
 });
