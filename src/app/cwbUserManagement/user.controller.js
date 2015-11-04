@@ -1,40 +1,8 @@
-angular.module('cwbApp').controller('UserController', function ($modal) {
+angular.module('cwbApp').controller('UserController', ['CwbPopupService', function (CwbPopupService) {
 
-    //TODO create footer buttons list inside controllers
+    this.popup = CwbPopupService;
 
     this.deleteUser = function () {
         alert('delete user');
     };
-
-    this.openUserPopup = function () {
-        $modal.open({
-            templateUrl: '/cwb/dist/assets/templates/edit_user_popup.html',
-            controller: function ($scope, $modalInstance) {
-
-                $scope.save = function () {
-                    $modalInstance.close();
-                };
-
-                $scope.close = function () {
-                    $modalInstance.dismiss();
-                };
-            }
-        });
-    };
-
-    this.openActionsPopup = function () {
-        $modal.open({
-            templateUrl: '/cwb/dist/assets/templates/manage_actions_popup.html',
-            controller: function ($scope, $modalInstance) {
-
-                $scope.save = function () {
-                    $modalInstance.close();
-                };
-
-                $scope.close = function () {
-                    $modalInstance.dismiss();
-                };
-            }
-        });
-    };
-});
+}]);
