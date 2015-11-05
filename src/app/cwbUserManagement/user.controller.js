@@ -1,4 +1,4 @@
-angular.module('cwbApp').controller('UserController', function ($modal) {
+angular.module('cwbApp').controller('UserController', function (PopupService) {
 
     //TODO create footer buttons list inside controllers
     var vm = this;
@@ -7,17 +7,11 @@ angular.module('cwbApp').controller('UserController', function ($modal) {
         alert('delete user');
     };
 
-    vm.openUserPopup = function () {
-        $modal.open({
-            templateUrl: '/dist/assets/templates/edit_user_popup.html',
-            controller: 'PopupActionController as vm'
-        });
-    };
+    vm.openUserPopup = function(){
+        PopupService.openPoup('/dist/assets/templates/edit_user_popup.html');
+    }
 
     vm.openActionsPopup = function () {
-        $modal.open({
-            templateUrl: '/dist/assets/templates/manage_actions_popup.html',
-            controller: 'PopupActionController as vm'
-        });
+        PopupService.openPoup('/dist/assets/templates/manage_actions_popup.html');
     };
 });
