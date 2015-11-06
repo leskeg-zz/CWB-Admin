@@ -14,7 +14,7 @@ angular.module('cwbApp').config(function ($stateProvider, $urlRouterProvider, $l
         .state('bu_management.assets',  {url: '/assets',        templateUrl: '/dist/assets/templates/bu_assets.html'})
         .state('bu_management.modules', {url: '/modules',       templateUrl: '/dist/assets/templates/bu_modules.html'})
 
-        .state('user_management',               {url: '/user_management',   templateUrl: '/dist/assets/templates/user_management.html'})
+        .state('user_management',               {url: '/user_management',   templateUrl: '/dist/assets/templates/user_management.html', controller: 'UserManagementController as vm'})
         .state('user_management.list',          {url: '/list',              templateUrl: '/dist/assets/templates/user_list.html'})
         .state('user_management.list-domain',   {url: '/list-domain',       templateUrl: '/dist/assets/templates/user_list_domains.html'})
         .state('user_management.roles',         {url: '/roles',             templateUrl: '/dist/assets/templates/user_roles.html'})
