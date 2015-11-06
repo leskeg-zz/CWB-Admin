@@ -14,17 +14,17 @@
             <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
                     class="btn btn-default dropdown-toggle">Actions <span class="caret"></span></button>
             <ul class="dropdown-menu">
-                <li><a ui-sref="bu_management.details">Add</a></li>
-                <li><a ui-sref="bu_management.details">Edit</a></li>
-                <li><a href="">Disable</a></li>
+                <li><a ng-click="vm.add()">Add</a></li>
+                <li><a ng-click="vm.edit()">Edit</a></li>
+                <li><a ng-click="vm.disable()">Disable</a></li>
             </ul>
         </div>
-        <buton type="button" class="btn btn-default">Test</buton>
-        <buton type="button" class="btn btn-default">Validate</buton>
-        <buton type="button" class="btn btn-default">Delete</buton>
-        <buton type="button" class="btn btn-default">Activate</buton>
-        <buton type="button" class="btn btn-default">Download Config Template</buton>
-        <buton type="button" class="btn btn-default">Upload Configuration File</buton>
+        <buton type="button" class="btn btn-default" ng-click="vm.test()">Test</buton>
+        <buton type="button" class="btn btn-default" ng-click="vm.validate()">Validate</buton>
+        <buton type="button" class="btn btn-default" ng-click="vm.remove()">Delete</buton>
+        <buton type="button" class="btn btn-default" ng-click="vm.activate()">Activate</buton>
+        <buton type="button" class="btn btn-default" ng-click="vm.downloadConfig()">Download Config Template</buton>
+        <buton type="button" class="btn btn-default" ng-click="vm.uploadConfig()">Upload Configuration File</buton>
     </div>
 </nav>
 

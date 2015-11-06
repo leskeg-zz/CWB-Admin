@@ -8,20 +8,6 @@
     </div>
 </nav>
 
-<nav role="group" class="btn-group bu-modules-buttons">
-    <div role="group" class="btn-group">
-        <div role="group" class="btn-group">
-            <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                    class="btn btn-default dropdown-toggle">Actions <span class="caret"></span></button>
-            <ul class="dropdown-menu">
-                <li><a ui-sref="bu_management.details">Add</a></li>
-                <li><a ui-sref="bu_management.details">Edit</a></li>
-                <li><a href="">Disable</a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
-
 <div class="content-main">
     <form id="bu-details-form">
         <div class="form-container">
@@ -126,8 +112,8 @@
         <div class="save-cancel-buttons">
             <div role="group" aria-label="..." class="btn-group">
                 <div role="group" class="btn-group">
-                    <buton type="button" class="btn btn-default">Save</buton>
-                    <buton type="button" class="btn btn-default">Cancel</buton>
+                    <buton type="button" class="btn btn-default" ng-click="vm.save()">Save</buton>
+                    <buton type="button" class="btn btn-default" ng-click="vm.cancel()">Cancel</buton>
                 </div>
             </div>
         </div>

@@ -10,16 +10,7 @@
 
 <nav role="group" class="btn-group bu-modules-buttons">
     <div role="group" class="btn-group">
-        <div role="group" class="btn-group">
-            <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                    class="btn btn-default dropdown-toggle">Actions <span class="caret"></span></button>
-            <ul class="dropdown-menu">
-                <li><a ui-sref="bu_management.details">Add</a></li>
-                <li><a ui-sref="bu_management.details">Edit</a></li>
-                <li><a href="">Disable</a></li>
-            </ul>
-        </div>
-        <buton type="button" class="btn btn-default">Upload new file</buton>
+        <buton type="button" class="btn btn-default" ng-click="vm.uploadFile()">Upload new file</buton>
     </div>
 </nav>
 

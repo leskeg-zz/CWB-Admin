@@ -13,9 +13,9 @@
         <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
                 class="btn btn-default dropdown-toggle">Role Group Actions<span class="caret"></span></button>
         <ul class="dropdown-menu">
-            <li><a>Add</a></li>
-            <li><a>Edit</a></li>
-            <li><a>Remove</a></li>
+            <li><a ng-click="vm.add()">Add</a></li>
+            <li><a ng-click="vm.edit()">Edit</a></li>
+            <li><a ng-click="vm.remove()">Remove</a></li>
         </ul>
     </div>
 </nav>
@@ -324,8 +324,8 @@
     <div class="save-cancel-buttons">
         <div role="group" aria-label="..." class="btn-group">
             <div role="group" class="btn-group">
-                <buton type="button" class="btn btn-default">Save</buton>
-                <buton type="button" class="btn btn-default">Reset</buton>
+                <buton type="button" class="btn btn-default" ng-click="vm.save()">Save</buton>
+                <buton type="button" class="btn btn-default" ng-click="vm.reset()">Reset</buton>
             </div>
         </div>
     </div>

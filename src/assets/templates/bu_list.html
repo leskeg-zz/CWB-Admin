@@ -14,9 +14,10 @@
             <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
                     class="btn btn-default dropdown-toggle">Actions <span class="caret"></span></button>
             <ul class="dropdown-menu">
+                <!--<li><a ng-click="vm.add()">Add</a></li>-->
                 <li><a ui-sref="bu_management.details">Add</a></li>
-                <li><a ui-sref="bu_management.details">Edit</a></li>
-                <li><a href="">Disable</a></li>
+                <li><a ng-click="vm.edit()">Edit</a></li>
+                <li><a ng-click="vm.disable()">Disable</a></li>
             </ul>
         </div>
     </div>
