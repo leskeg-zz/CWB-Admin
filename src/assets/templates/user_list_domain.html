@@ -11,25 +11,33 @@
         </select>
     </div>
 </div>
+
+<nav role="group" class="btn-group">
+    <div role="group" class="btn-group">
+        <buton type="button" class="btn btn-default" ui-sref="user_management.list">Users List</buton>
+        <buton type="button" class="btn btn-default" ui-sref="user_management.roles">Manage Roles</buton>
+        <buton type="button" class="btn btn-default" ui-sref="user_management.role-groups">Manage Groups</buton>
+    </div>
+</nav>
+
+<nav role="group" class="btn-group bu-modules-buttons">
+    <div role="group" class="btn-group">
+        <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                class="btn btn-default dropdown-toggle">Actions<span class="caret"></span></button>
+        <ul class="dropdown-menu">
+            <li><a ng-click="vm.openUserPopup()">Add</a></li>
+            <li><a ng-click="vm.openUserPopup()">Edit</a></li>
+            <li><a ng-click="vm.deleteUser()">Remove</a></li>
+        </ul>
+    </div>
+    <div role="group" class="btn-group">
+        <buton type="button" class="btn btn-default">Block</buton>
+        <buton type="button" class="btn btn-default">Enable</buton>
+        <buton type="button" class="btn btn-default">Assign Role</buton>
+    </div>
+</nav>
+
 <div class="content-main">
-    <nav role="group" aria-label="..." class="btn-group">
-        <div role="group" class="btn-group">
-            <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                    class="btn btn-default dropdown-toggle">Actions<span class="caret"></span></button>
-            <ul class="dropdown-menu">
-                <li><a href="">Add</a></li>
-                <li><a href="">Edit</a></li>
-                <li><a href="">Remove</a></li>
-            </ul>
-        </div>
-        <div role="group" class="btn-group">
-            <buton type="button" class="btn btn-default">Block</buton>
-            <buton type="button" class="btn btn-default">Enable</buton>
-            <buton type="button" class="btn btn-default" ui-sref="user_management.roles">Assign Role</buton>
-            <buton type="button" class="btn btn-default" ui-sref="user_management.roles">Manage Roles</buton>
-            <buton type="button" class="btn btn-default" ui-sref="user_management.role-groups">Manage Groups</buton>
-        </div>
-    </nav>
     <table class="table table-striped table-condensed table-bordered">
         <tr class="active">
             <th width="15%">Name</th>

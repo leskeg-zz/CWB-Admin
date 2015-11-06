@@ -1,110 +1,135 @@
 <h4>Business Unit Details</h4>
-<form id="bu-details-form">
-    <div class="form-container">
-        <div class="form-column0">
-            <div class="form-element">
-                <div class="form-column1">
-                    <label>Domain</label>
-                </div>
-                <div class="form-column2">
-                    <input type="url" id="inputDomain" placeholder="" required="" autofocus class="form-control">
-                </div>
-            </div>
-            <div class="form-element">
-                <div class="form-column1">
-                    <label>Description</label>
-                </div>
-                <div class="form-column2">
-                    <textarea placeholder="" required="" class="form-control"></textarea>
-                </div>
-            </div>
-            <div class="form-element">
-                <div class="form-column1">
-                    <label>Address</label>
-                </div>
-                <div class="form-column2">
-                    <textarea placeholder="" required="" class="form-control"></textarea>
-                </div>
-            </div>
-            <div class="form-element">
-                <div class="form-column1">
-                    <label>Upload logo</label>
-                </div>
-                <div class="form-column2">
-                    <div id="upload-logo"></div>
-                </div>
-            </div>
-        </div>
-        <div class="form-column0">
-            <div class="form-element">
-                <div class="form-column1">
-                    <label>Email</label>
-                </div>
-                <div class="form-column2">
-                    <input type="url" id="inputDomain" placeholder="" required="" class="form-control">
-                </div>
-            </div>
-            <div class="form-element">
-                <div class="form-column1">
-                    <label>Phone</label>
-                </div>
-                <div class="form-column2">
-                    <input type="url" id="inputDomain" placeholder="" required="" class="form-control">
-                </div>
-            </div>
-            <div class="form-element">
-                <div class="form-column1">
-                    <label>Date Format</label>
-                </div>
-                <div class="form-column2">
-                    <select class="form-control">
-                        <option>dd.MM.yyyy</option>
-                        <option>dd.MM.yy</option>
-                        <option>d.M.y</option>
-                        <option>dd/MM/yy</option>
-                        <option>yyyy-MM-dd</option>
-                    </select>
-                </div>
-            </div>
-            <div class="form-element">
-                <div class="form-column1">
-                    <label>Time Zone</label>
-                </div>
-                <div class="form-column2">
-                    <select multiple class="form-control">
-                        <option>(UTC)</option>
-                        <option>(UTC + 01.00)</option>
-                        <option>(UTC + 02.00)</option>
-                        <option>(UTC + 03.00)</option>
-                        <option>(UTC + 04.00)</option>
-                        <option>(UTC + 05.00)</option>
-                        <option>(UTC + 06.00)</option>
-                    </select>
-                </div>
-            </div>
-        </div>
-        <div class="form-column0">
-            <div class="form-element">
-                <div class="form-column1">
-                    <label>Time Format</label>
-                </div>
-                <div class="form-column2">
-                    <select multiple class="form-control">
-                        <option>H:mm</option>
-                        <option>HH:mm</option>
-                        <option>H:mm:ss</option>
-                        <option>HH:mm:ss</option>
-                    </select>
-                </div>
-            </div>
+
+<nav role="group" class="btn-group">
+    <div role="group" class="btn-group">
+        <buton type="button" class="btn btn-default" ui-sref="bu_management.list">BU List</buton>
+        <buton type="button" class="btn btn-default" ui-sref="bu_management.assets">Knowledge Assets</buton>
+        <buton type="button" class="btn btn-default" ui-sref="bu_management.modules">Modules Integration</buton>
+    </div>
+</nav>
+
+<nav role="group" class="btn-group bu-modules-buttons">
+    <div role="group" class="btn-group">
+        <div role="group" class="btn-group">
+            <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                    class="btn btn-default dropdown-toggle">Actions <span class="caret"></span></button>
+            <ul class="dropdown-menu">
+                <li><a ui-sref="bu_management.details">Add</a></li>
+                <li><a ui-sref="bu_management.details">Edit</a></li>
+                <li><a href="">Disable</a></li>
+            </ul>
         </div>
     </div>
-    <div class="save-cancel-buttons">
-        <div role="group" aria-label="..." class="btn-group">
-            <div role="group" class="btn-group">
-                <buton type="button" class="btn btn-default">Save</buton>
-                <buton type="button" class="btn btn-default">Cancel</buton>
+</nav>
+
+<div class="content-main">
+    <form id="bu-details-form">
+        <div class="form-container">
+            <div class="form-column0">
+                <div class="form-element">
+                    <div class="form-column1">
+                        <label>Domain</label>
+                    </div>
+                    <div class="form-column2">
+                        <input type="url" id="inputDomain" placeholder="" required="" autofocus class="form-control">
+                    </div>
+                </div>
+                <div class="form-element">
+                    <div class="form-column1">
+                        <label>Description</label>
+                    </div>
+                    <div class="form-column2">
+                        <textarea placeholder="" required="" class="form-control"></textarea>
+                    </div>
+                </div>
+                <div class="form-element">
+                    <div class="form-column1">
+                        <label>Address</label>
+                    </div>
+                    <div class="form-column2">
+                        <textarea placeholder="" required="" class="form-control"></textarea>
+                    </div>
+                </div>
+                <div class="form-element">
+                    <div class="form-column1">
+                        <label>Upload logo</label>
+                    </div>
+                    <div class="form-column2">
+                        <div id="upload-logo"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-column0">
+                <div class="form-element">
+                    <div class="form-column1">
+                        <label>Email</label>
+                    </div>
+                    <div class="form-column2">
+                        <input type="url" id="inputDomain" placeholder="" required="" class="form-control">
+                    </div>
+                </div>
+                <div class="form-element">
+                    <div class="form-column1">
+                        <label>Phone</label>
+                    </div>
+                    <div class="form-column2">
+                        <input type="url" id="inputDomain" placeholder="" required="" class="form-control">
+                    </div>
+                </div>
+                <div class="form-element">
+                    <div class="form-column1">
+                        <label>Date Format</label>
+                    </div>
+                    <div class="form-column2">
+                        <select class="form-control">
+                            <option>dd.MM.yyyy</option>
+                            <option>dd.MM.yy</option>
+                            <option>d.M.y</option>
+                            <option>dd/MM/yy</option>
+                            <option>yyyy-MM-dd</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-element">
+                    <div class="form-column1">
+                        <label>Time Zone</label>
+                    </div>
+                    <div class="form-column2">
+                        <select multiple class="form-control">
+                            <option>(UTC)</option>
+                            <option>(UTC + 01.00)</option>
+                            <option>(UTC + 02.00)</option>
+                            <option>(UTC + 03.00)</option>
+                            <option>(UTC + 04.00)</option>
+                            <option>(UTC + 05.00)</option>
+                            <option>(UTC + 06.00)</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="form-column0">
+                <div class="form-element">
+                    <div class="form-column1">
+                        <label>Time Format</label>
+                    </div>
+                    <div class="form-column2">
+                        <select multiple class="form-control">
+                            <option>H:mm</option>
+                            <option>HH:mm</option>
+                            <option>H:mm:ss</option>
+                            <option>HH:mm:ss</option>
+                        </select>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</form>
+        <div class="save-cancel-buttons">
+            <div role="group" aria-label="..." class="btn-group">
+                <div role="group" class="btn-group">
+                    <buton type="button" class="btn btn-default">Save</buton>
+                    <buton type="button" class="btn btn-default">Cancel</buton>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

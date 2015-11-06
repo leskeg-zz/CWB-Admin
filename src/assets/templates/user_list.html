@@ -1,5 +1,14 @@
 <h4>Users List of Domain ARM</h4>
-<nav role="group" aria-label="..." class="btn-group">
+
+<nav role="group" class="btn-group">
+    <div role="group" class="btn-group">
+        <buton type="button" class="btn btn-default" ui-sref="user_management.list">Users List</buton>
+        <buton type="button" class="btn btn-default" ui-sref="user_management.roles">Manage Roles</buton>
+        <buton type="button" class="btn btn-default" ui-sref="user_management.role-groups">Manage Groups</buton>
+    </div>
+</nav>
+
+<nav role="group" class="btn-group bu-modules-buttons">
     <div role="group" class="btn-group">
         <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
                 class="btn btn-default dropdown-toggle">Actions<span class="caret"></span></button>
@@ -13,10 +22,10 @@
         <buton type="button" class="btn btn-default">Block</buton>
         <buton type="button" class="btn btn-default">Enable</buton>
         <buton type="button" class="btn btn-default">Block Password</buton>
-        <buton type="button" class="btn btn-default" ui-sref="user_management.roles">Assign Role</buton>
-        <buton type="button" class="btn btn-default" ui-sref="user_management.role-groups">Manage Roles</buton>
+        <buton type="button" class="btn btn-default">Assign Role</buton>
     </div>
 </nav>
+
 <div class="content-main">
     <div class="input-group"><span class="input-group-btn">
               <button type="button" class="btn btn-default glyphicon glyphicon-search"></button></span>

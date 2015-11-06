@@ -1,24 +1,49 @@
 <h4>Business Unit Assets</h4>
-<buton type="button" class="btn btn-default">Upload new file</buton>
-<table class="table table-striped table-condensed table-bordered">
-    <tr class="active">
-        <th width="15%">File Name</th>
-        <th width="15%">Uploaded Date</th>
-        <th width="70%">Status</th>
-    </tr>
-    <tr>
-        <td>Data1.rdf</td>
-        <td>12.05.2015</td>
-        <td>Approved</td>
-    </tr>
-    <tr>
-        <td>Data2.rdf</td>
-        <td>18.05.2015</td>
-        <td>Approved</td>
-    </tr>
-    <tr>
-        <td>Data3.rdf</td>
-        <td>20.05.2015</td>
-        <td>Pending</td>
-    </tr>
-</table>
+
+<nav role="group" class="btn-group">
+    <div role="group" class="btn-group">
+        <buton type="button" class="btn btn-default" ui-sref="bu_management.list">BU List</buton>
+        <buton type="button" class="btn btn-default" ui-sref="bu_management.assets">Knowledge Assets</buton>
+        <buton type="button" class="btn btn-default" ui-sref="bu_management.modules">Modules Integration</buton>
+    </div>
+</nav>
+
+<nav role="group" class="btn-group bu-modules-buttons">
+    <div role="group" class="btn-group">
+        <div role="group" class="btn-group">
+            <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                    class="btn btn-default dropdown-toggle">Actions <span class="caret"></span></button>
+            <ul class="dropdown-menu">
+                <li><a ui-sref="bu_management.details">Add</a></li>
+                <li><a ui-sref="bu_management.details">Edit</a></li>
+                <li><a href="">Disable</a></li>
+            </ul>
+        </div>
+        <buton type="button" class="btn btn-default">Upload new file</buton>
+    </div>
+</nav>
+
+<div class="content-main">
+    <table class="table table-striped table-condensed table-bordered">
+        <tr class="active">
+            <th width="15%">File Name</th>
+            <th width="15%">Uploaded Date</th>
+            <th width="70%">Status</th>
+        </tr>
+        <tr>
+            <td>Data1.rdf</td>
+            <td>12.05.2015</td>
+            <td>Approved</td>
+        </tr>
+        <tr>
+            <td>Data2.rdf</td>
+            <td>18.05.2015</td>
+            <td>Approved</td>
+        </tr>
+        <tr>
+            <td>Data3.rdf</td>
+            <td>20.05.2015</td>
+            <td>Pending</td>
+        </tr>
+    </table>
+</div>
